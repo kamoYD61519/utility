@@ -7,8 +7,8 @@ current_dir=os.getcwd()
 print("Current directory:", current_dir)
 
 # no-consoleならファイルに保存
-homedir_path = '/Users/user'
-output_file = f'{homedir_path}/current_dir.txt'
+my_path = '/Users/user' # ここを自分の開発環境に合わせて変更する
+output_file = f'{my_path}/current_dir.txt'
 try:
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(f"Current Directory: {current_dir}\n")
